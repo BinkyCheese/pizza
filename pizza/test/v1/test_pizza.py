@@ -43,8 +43,9 @@ def test_pizza_remove_toppings():
     p.add_topping(pizza, 'pepperoni')
     p.add_topping(pizza, 'cheese')
     p.remove_topping(pizza, 'pepperoni')
+    p.remove_topping(pizza, 'pepperoni')
     assert(p.is_veggetarian(pizza))
-    assert(p.calculate_price(pizza) == 9.0)
+    assert(p.calculate_price(pizza) == 11.0)
 
 def test_pizza_is_diary_free_cheese():
     # change src.pizza so this test passes
