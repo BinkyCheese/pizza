@@ -7,3 +7,5 @@ class Cheese(Pizza):
         return self.base.is_veggetarian()
     def calculate_price(self):
         return(1.0 + self.base.calculate_price())
+    def is_dairy_free(self):
+        return False
